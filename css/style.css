@@ -3,11 +3,27 @@
   padding: 0;
   box-sizing: border-box;  
 }
+/* COMMONS  */
+.verde{
+    background-color: green;
+}
+.rosso{
+    background-color: red;
+}
+.font-rosso{
+    color: red;
+}
+.bold{
+    font-weight: bold;
+}
+.none{
+    display: none;
+}
+/* FINE COMMONS  */
 
 main{
     width: 1000px;
     margin: auto;
-    background-color: red;
 }
 .row::after{
     content: '';
@@ -15,7 +31,6 @@ main{
     clear: both;
 }
 .cointaner{
-    background-color: green;
     float: left;
     width: calc(100% / 3 - 20px);
     margin: 10px;
@@ -26,6 +41,13 @@ main{
 }
 .cointaner .box-image img{
     width: 100%;
+}
+.cointaner:hover .show{
+    display: none;
+}
+.cointaner:hover .none{
+    display: block;
+    cursor: pointer;
 }
 .cointaner .box-image .blocchi{
     position: absolute;
@@ -47,19 +69,15 @@ main{
     display: inline-block;
     line-height: 20px;
     padding: 5px;
+}
 
-}
-.blocchi .blocco.rosso{
-    background-color: tomato;
-}
-.blocchi .blocco.verde{
-    background-color: green;
-}
 /* fine blocco immagine  */
 /* inizio blocco testo  */
-.text{
-    background-color: green;
+.cointaner .text{
+    padding: 5px;
+    height: 83px;
 }
+
 .text .brand{
     font-size: 18px;
     font-style: italic;
@@ -69,9 +87,10 @@ main{
     font-size: 18px;
     margin: 5px 0;
 }
-.text .prezzo{
-    color: red;
-    font-weight: bold;
+.text.txtverdino{
+    background-color: #64A03F;
+    margin-top: 0;
+    padding: 10px;
 }
 /* fine blocco testo  */
 
