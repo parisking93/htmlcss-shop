@@ -23,7 +23,8 @@
 
 main{
     width: 1000px;
-    margin: auto;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
 }
 .row::after{
     content: '';
