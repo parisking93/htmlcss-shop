@@ -19,6 +19,10 @@
 .none{
     display: none;
 }
+.circle-r{
+    font-size: 10px;
+    vertical-align: super;
+}
 /* FINE COMMONS  */
 
 main{
@@ -82,6 +86,7 @@ main{
 .text .brand{
     font-size: 18px;
     font-style: italic;
+    line-height: 20px;
 }
 .text .descrizione{
     text-transform: uppercase;
