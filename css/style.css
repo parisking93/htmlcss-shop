@@ -6,14 +6,19 @@
 
 main{
     width: 1000px;
-    height: 800px;
     margin: auto;
     background-color: red;
+}
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 .cointaner{
     background-color: green;
     float: left;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
 }
 /* blocco immagine  */
 .cointaner .box-image{
@@ -25,6 +30,7 @@ main{
 .cointaner .box-image .blocchi{
     position: absolute;
     bottom: 3%;
+    color: white;
 }
 .cointaner .box-image .cuore{
     position: absolute;
