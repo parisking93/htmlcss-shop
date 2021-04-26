@@ -69,6 +69,7 @@ main{
     line-height: 30px;
     text-align: center;
     font-size: 32px;
+    border-radius: 50%;
 }
 .blocchi .blocco{
     display: inline-block;
@@ -86,6 +87,7 @@ main{
 .text .brand{
     font-size: 18px;
     font-style: italic;
+    text-transform: capitalize;
     line-height: 20px;
 }
 .text .descrizione{
